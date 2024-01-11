@@ -87,12 +87,6 @@ h6 {
     isolation: isolate;
 }
 
-/* basic styling */
-:root {color-scheme: dark;}
-@media (prefers-color-scheme: light) {
-    :root {color-scheme: light;}
-}
-
 .ascii_big {
     font-size: 8px;
 }
@@ -114,13 +108,6 @@ body > *:first-child {
 :root {
     --color-fg: #d3d3d3;
     --color-bg: #0c0d1a;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-fg: #3c3c3c;
-        --color-bg: #f4ecd8;
-    }
 }
 
 * {
