@@ -1,4 +1,26 @@
 /* sensible defaults */
+
+@font-face {
+    font-family: Gulax, sans-serif;
+    src: url("assets/fonts/Gulax-Regular.woff2");
+}
+
+@font-face {
+    font-family: Avara, sans-serif;
+    src: url("assets/fonts/Avara-Bold.woff2");
+}
+
+@font-face {
+    font-family: WonderType, sans-serif;
+    src: url("assets/fonts/WonderType-Regular.otf");
+}
+
+
+html {
+    --section-width: 65ch;
+}
+
+
 *,
 *::before,
 *::after {
@@ -7,6 +29,7 @@
 
 * {
     margin: 0;
+    font-size: 18px;
 }
 
 html,
@@ -18,6 +41,8 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    max-width: var(--section-width);
+    margin-inline: auto;
 }
 
 img,
@@ -27,6 +52,7 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+    margin-top: 1em;
 }
 
 input,
@@ -43,7 +69,17 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: Avara;
     overflow-wrap: break-word;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1em;
 }
 
 #root,
@@ -57,17 +93,22 @@ h6 {
     :root {color-scheme: light;}
 }
 
-* {font-family: system-ui, 'Helvetica Neue', sans-serif;}
+.ascii_big {
+    font-size: 8px;
+}
 
-body > * {
-    width: 700px;
-    margin-inline: auto;
-    margin-bottom: .8rem;
+@media only screen and (max-width: 767px)  {
+   .ascii_big {
+    font-size: 4px;
+   }
+
 }
 
 body > *:first-child {
     margin-top: 1rem;
 }
+
+
 
 /* easy theming */
 :root {
@@ -85,4 +126,38 @@ body > *:first-child {
 * {
     color: var(--color-fg);
     background-color: var(--color-bg);
+}
+
+h1 {
+    font-family: Avara;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-family: WonderType;
+    font-size: 1rem;
+}
+
+* {
+    font-family: monospace;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+._h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+}
+._hr {
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-fg), var(--color-bg));
+    /* border-top: solid 2px var(--color-fg); */
+    flex-grow: 100;
 }
