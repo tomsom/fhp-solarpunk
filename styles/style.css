@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: Gulax, sans-serif;
-    src: url("/assets/fonts/Gulax-Regular.woff2") format(woff2);
+    src: url("../assets/fonts/Gulax-Regular.woff2") format(woff2);
 }
 
 @font-face {
     font-family: AvaraWeb;
-    src: url("/assets/fonts/Avara-Black.woff2") format(woff2);
+    src: url("../assets/fonts/Avara-Black.woff2") format(woff2);
 }
 
 @font-face {
     font-family: WonderTypeWeb;
-    src: url("/assets/fonts/WonderType-Regular.otf") format(opentype);
+    src: url("../assets/fonts/WonderType-Regular.otf") format(opentype);
 }
 
 
