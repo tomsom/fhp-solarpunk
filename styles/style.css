@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: Gulax, sans-serif;
-    src: url("assets/fonts/Gulax-Regular.woff2") format(woff2);
+    src: url("/assets/fonts/Gulax-Regular.woff2") format(woff2);
 }
 
 @font-face {
-    font-family: Avara, sans-serif;
-    src: url("assets/fonts/Avara-Bold.woff2") format(woff2);
+    font-family: AvaraWeb;
+    src: url("/assets/fonts/Avara-Black.woff2") format(woff2);
 }
 
 @font-face {
-    font-family: WonderType, sans-serif;
-    src: url("assets/fonts/WonderType-Regular.otf") format(opentype);
+    font-family: WonderTypeWeb;
+    src: url("/assets/fonts/WonderType-Regular.otf") format(opentype);
 }
 
 
@@ -69,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Avara;
+    font-family: AvaraWeb, monospace;
     overflow-wrap: break-word;
 }
 p,
@@ -116,7 +116,7 @@ body > *:first-child {
 }
 
 h1 {
-    font-family: Avara;
+    font-family: Avvvr;
     font-size: 3rem;
 }
 
@@ -125,7 +125,7 @@ h2 {
 }
 
 p {
-    font-family: WonderType;
+    font-family: WonderTypeWeb;
     font-size: 1rem;
 }
 
@@ -147,4 +147,9 @@ section {
     background: linear-gradient(90deg, var(--color-fg), var(--color-bg));
     /* border-top: solid 2px var(--color-fg); */
     flex-grow: 100;
+}
+
+#tiresult,
+#tiresult > * {
+    font-family: monospace;
 }
